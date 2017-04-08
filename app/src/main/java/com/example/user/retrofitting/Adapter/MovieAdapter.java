@@ -25,13 +25,11 @@ import java.util.List;
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
     private Context mContext;
     private List<Movie> movies;
-    private int rowLayout;
     public static final String TAG=MovieAdapter.class.getSimpleName();
 
-    public MovieAdapter(List<Movie> movies, int rowLayout, Context context) {
+    public MovieAdapter(List<Movie> movies, Context context) {
         this.movies = movies;
         mContext = context;
-        this.rowLayout = rowLayout;
     }
 
     @Override
