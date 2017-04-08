@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity implements MainView{
 
     @Override
     public void onResonseRecieved(List<Movie> movies) {
-        mRecyclerView.setAdapter(new MovieAdapter(movies,R.layout.movie_row,MainActivity.this));
+        mRecyclerView.setAdapter(new MovieAdapter(movies,MainActivity.this));
     }
 }
