@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/gradient"
+                android:layout_marginBottom="12dp"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image_poster"/>
+
+    <TextView
+        android:text="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_poster"
+        android:id="@+id/titleField"/>
+
+
+    <TextView
+        android:text="Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleField"
+        android:id="@+id/dateField"/>
+
+    <TextView
+        android:text="Summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateField"
+        android:id="@+id/summaryField"/>
+</RelativeLayout>
